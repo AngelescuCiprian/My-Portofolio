@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Download } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Menu, X, Download } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,22 +9,22 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: "#about", label: "About" },
+    { href: "#skills", label: "Skills" },
+    { href: "#experience", label: "Experience" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact" },
   ];
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
     setIsMobileMenuOpen(false);
   };
@@ -32,7 +32,7 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass py-4' : 'bg-transparent py-6'
+        isScrolled ? "glass py-4" : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
@@ -41,7 +41,7 @@ const Navigation = () => {
           className="text-xl font-bold gradient-text"
           onClick={(e) => {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
           AC
@@ -59,9 +59,9 @@ const Navigation = () => {
             </button>
           ))}
           <a
-            href="#"
+            href="/cv/Angelescu_Ciprian_CV.pdf"
+            download="Angelescu_Ciprian_CV.pdf"
             className="btn-primary flex items-center gap-2 text-sm"
-            onClick={(e) => e.preventDefault()}
           >
             <Download className="w-4 h-4" />
             Download CV
@@ -73,7 +73,11 @@ const Navigation = () => {
           className="md:hidden p-2 text-foreground"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {isMobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
       </div>
 
@@ -91,9 +95,9 @@ const Navigation = () => {
               </button>
             ))}
             <a
-              href="#"
-              className="btn-primary flex items-center justify-center gap-2 text-sm mt-2"
-              onClick={(e) => e.preventDefault()}
+              href="/cv/Angelescu_Ciprian_CV.pdf"
+              download="Angelescu_Ciprian_CV.pdf"
+              className="btn-primary flex items-center gap-2 text-sm"
             >
               <Download className="w-4 h-4" />
               Download CV

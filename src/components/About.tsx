@@ -18,10 +18,7 @@ const About = () => {
                 {/* Avatar Container */}
                 <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full glass p-2">
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-surface to-muted flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/public/profilePicture.jpg"
-                      alt="Profile Picture"
-                    />
+                    <img src="/profilepicture.jpg" alt="Profile Picture" />
                   </div>
                 </div>
 
