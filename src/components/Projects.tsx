@@ -1,27 +1,50 @@
-import { ExternalLink, Github, Folder } from 'lucide-react';
+import { ExternalLink, Github, Folder } from "lucide-react";
 
 const projects = [
   {
-    title: 'Today I Learned',
-    description: 'A fact-sharing platform where users can share interesting facts they learned. Built with React and modern web technologies.',
-    tags: ['React', 'JavaScript', 'CSS'],
-    github: 'https://github.com/AngelescuCiprian/today-i-learned',
+    title: "Today I Learned",
+    description:
+      "A fullstack fact-sharing platform where users can share interesting facts they learned. Built with React and modern web technologies.",
+    tags: ["React", "JavaScript", "CSS", "Supabase"],
+    github: "https://github.com/AngelescuCiprian/today-i-learned",
     live: null,
     featured: true,
   },
   {
-    title: 'Portfolio Website',
-    description: 'Personal portfolio showcasing projects and skills with a modern dark theme and smooth animations.',
-    tags: ['React', 'TypeScript', 'Tailwind'],
-    github: 'https://github.com/AngelescuCiprian',
+    title: "Wordle Game",
+    description:
+      "A Wordle-style game built with vanilla JavaScript, HTML, and CSS, using an external API as a word database. The project focuses on game logic, user input handling, and dynamic UI updates.",
+    tags: ["JavaScript", "HTML", "CSS"],
+    github: "https://github.com/AngelescuCiprian/WordleGame",
     live: null,
     featured: false,
   },
   {
-    title: 'Coming Soon',
-    description: 'More exciting projects are in the works. Stay tuned for updates!',
-    tags: ['AI', 'Full Stack', 'QA'],
-    github: null,
+    title: "AI-Powered Web Automation",
+    description:
+      "Configured an MCP server integrated with Playwright MCP, using an AI agent to automate web interactions based on high-level task instructions. Focused on reliable browser automation, task orchestration, and scalable testing workflows.",
+    tags: ["Playwright", "MCP Server", "AI Automation", "Task-driver AI"],
+    github:
+      "https://www.linkedin.com/posts/angelescu-ciprian-72681b204_ai-automation-sql-ugcPost-7408149980336635904-8R46?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQXP04BbPstJp_ijy9e2w6SMFviohLDrkw",
+    live: null,
+    featured: false,
+  },
+  {
+    title: "User management system",
+    description:
+      "A bash-based user management system with registration, login/logout, password reset via email, and user reports.",
+    tags: ["Bash Scripting", "Linux"],
+    github: "https://github.com/AngelescuCiprian/user-management-bash",
+    live: null,
+    featured: false,
+  },
+  {
+    title: "Men vs Gorillas – NetLogo Simulation",
+    description:
+      "NetLogo agent-based simulation of humans vs gorillas, featuring custom combat logic, energy decay, dynamic elimination, and real-time population plotting. Fully designed and implemented from scratch.",
+    tags: ["NetLogo", "Agent-Based Modeling", "Simulation", "Academic Project"],
+    github:
+      "https://github.com/AngelescuCiprian/Men-vs-Gorillas-NetLogo-Simulation",
     live: null,
     featured: false,
   },
@@ -49,7 +72,7 @@ const Projects = () => {
             <div
               key={project.title}
               className={`bento-card group ${
-                project.featured ? 'md:col-span-2 lg:col-span-2' : ''
+                project.featured ? "md:col-span-2 lg:col-span-2" : ""
               }`}
             >
               {/* Header */}

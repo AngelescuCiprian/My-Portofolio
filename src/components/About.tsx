@@ -1,11 +1,11 @@
-import { Code2, Sparkles, Zap } from 'lucide-react';
+import { Code2, Sparkles, Zap } from "lucide-react";
 
 const About = () => {
   return (
     <section id="about" className="py-24 relative">
       {/* Background Glow */}
       <div className="hero-glow top-0 left-0 opacity-30" />
-      
+
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -14,12 +14,14 @@ const About = () => {
               <div className="relative">
                 {/* Glow Ring */}
                 <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 blur-2xl animate-glow-pulse" />
-                
+
                 {/* Avatar Container */}
                 <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full glass p-2">
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-surface to-muted flex items-center justify-center overflow-hidden">
-                    <img src='/public/profilePicture.jpg' alt="Profile Picture" />
-                    
+                    <img
+                      src="/public/profilePicture.jpg"
+                      alt="Profile Picture"
+                    />
                   </div>
                 </div>
 
@@ -27,10 +29,16 @@ const About = () => {
                 <div className="absolute -top-4 -right-4 glass rounded-xl p-3 animate-float">
                   <Code2 className="w-6 h-6 text-primary" />
                 </div>
-                <div className="absolute -bottom-4 -left-4 glass rounded-xl p-3 animate-float" style={{ animationDelay: '1s' }}>
+                <div
+                  className="absolute -bottom-4 -left-4 glass rounded-xl p-3 animate-float"
+                  style={{ animationDelay: "1s" }}
+                >
                   <Sparkles className="w-6 h-6 text-secondary" />
                 </div>
-                <div className="absolute top-1/2 -right-8 glass rounded-xl p-3 animate-float" style={{ animationDelay: '2s' }}>
+                <div
+                  className="absolute top-1/2 -right-8 glass rounded-xl p-3 animate-float"
+                  style={{ animationDelay: "2s" }}
+                >
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
               </div>
@@ -47,7 +55,14 @@ const About = () => {
                 <span className="gradient-text">Solutions</span> with Passion
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                I specialize in building robust applications using React and Node.js. With a strong foundation in computer science, I love solving complex problems and creating seamless user experiences that make a real impact.
+                I’m a junior software developer with a strong interest in
+                building reliable and well-structured applications. I have
+                hands-on experience in QA (manual, automation, and AI-assisted
+                testing), databases, and web development using JavaScript,
+                React, Node.js, and Supabase. With an academic background in
+                computer science, including C and C++, I enjoy learning new
+                technologies and continuously improving my skills while
+                contributing to meaningful projects.
               </p>
 
               {/* Stats */}
@@ -58,11 +73,15 @@ const About = () => {
                 </div>
                 <div className="text-center md:text-left">
                   <div className="text-3xl font-bold gradient-text">7+</div>
-                  <div className="text-sm text-muted-foreground">Technologies</div>
+                  <div className="text-sm text-muted-foreground">
+                    Technologies
+                  </div>
                 </div>
                 <div className="text-center md:text-left">
                   <div className="text-3xl font-bold gradient-text">100%</div>
-                  <div className="text-sm text-muted-foreground">Dedication</div>
+                  <div className="text-sm text-muted-foreground">
+                    Dedication
+                  </div>
                 </div>
               </div>
             </div>
