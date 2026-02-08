@@ -2,6 +2,15 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 
 const projects = [
   {
+    title: "MOOD Beauty Studio – Presentation Website",
+    description:
+      "Luxury presentation website for a beauty salon client, featuring an elegant, feminine design, interactive service cards, direct WhatsApp & Instagram booking, and a responsive, mobile-first layout.",
+    tags: ["React", "JavaScript", "CSS", "Supabase"],
+    github: "https://github.com/AngelescuCiprian/Mood-Beauty",
+    live: null,
+    featured: true,
+  },
+  {
     title: "Today I Learned",
     description:
       "A fullstack fact-sharing platform where users can share interesting facts they learned. Built with React and modern web technologies.",
